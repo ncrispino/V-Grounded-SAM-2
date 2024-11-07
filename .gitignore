@@ -1,3 +1,7 @@
+# Nick
+*.swp
+gsam2_env/
+
 # SAM 2
 .vscode/
 .DS_Store
