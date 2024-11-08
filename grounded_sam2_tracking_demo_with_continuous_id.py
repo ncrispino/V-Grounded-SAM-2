@@ -219,7 +219,7 @@ if __name__ == "__main__":
     parser.add_argument("--video_dir", type=str, help="The directory of JPEG frames with filenames like `<frame_index>.jpg`")
     parser.add_argument("--text", type=str, help="The text prompt for Grounding DINO. Must be lowercased and end with a dot.")
     args = parser.parse_args()
-    output_dir = args.video_dir + "../gsam2_frames"  # The directory to save the annotated frames
-    output_video_path = args.video_dir + "../gsam2.mp4"  # The path to save the final video
+    output_dir = args.video_dir + "/../gsam2_frames"  # The directory to save the annotated frames
+    output_video_path = args.video_dir + "/../gsam2.mp4"  # The path to save the final video
     os.makedirs(output_dir, exist_ok=True)
     main(args.video_dir, output_dir, output_video_path, args.text)
