@@ -96,8 +96,8 @@ def main(video_dir, output_dir, output_video_path, text):
         results = processor.post_process_grounded_object_detection(
             outputs,
             inputs.input_ids,
-            box_threshold=0.25,
-            text_threshold=0.25,
+            box_threshold=0.4, # 0.25,
+            text_threshold=0.45,  # 0.25,
             target_sizes=[image.size[::-1]]
         )
 
